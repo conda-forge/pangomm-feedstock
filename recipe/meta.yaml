@@ -11,7 +11,7 @@ source:
   sha256: 14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - pangomm-{{ abi_version }} >={{ version }}
@@ -29,10 +29,10 @@ outputs:
         - make
       host:
         # These requirements can be found in configure.ac
-        - cairomm >=1.2.2
+        - cairomm-1.0 >=1.2.2
         - pango >=1.41.0
         - glibmm >=2.48.0
-        - libsigcpp
+        - sigcpp-2.0
         - glib
         - cairo
       run:
