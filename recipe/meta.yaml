@@ -29,10 +29,10 @@ outputs:
         - make
       host:
         # These requirements can be found in configure.ac
-        - cairomm >=1.2.2
+        - cairomm-1.0 >=1.2.2
         - pango >=1.41.0
         - glibmm >=2.48.0
-        - libsigcpp
+        - sigcpp-2.0
         - glib
         - cairo
       run:
