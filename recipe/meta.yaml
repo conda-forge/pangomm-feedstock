@@ -1,4 +1,4 @@
-{% set version = "2.46.2" %}
+{% set version = "2.50.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 {% set abi_version = "1.4" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.gnome.org/sources/pangomm/{{ major_minor }}/pangomm-{{ version }}.tar.xz
-  sha256: 57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4
+  sha256: a27aa77e017b9afce9e751d85bd1cf890abbb3a58bf59d0fac917eef82db3b5b
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 
 outputs:
   - name: pangomm-{{ abi_version }}
-    script: build_pangomm.sh   # [unix]
+    script: build_pangomm.sh  # [unix]
     script: build_pangomm.bat  # [win]
     build:
       run_exports:
@@ -60,7 +60,7 @@ about:
   home: https://developer.gnome.org/pangomm/
   license: LGPL-2.1-or-later
   license_file: COPYING
-  summary: "C++ bindings for pango"
+  summary: C++ bindings for pango
   dev_url: https://gitlab.gnome.org/GNOME/pangomm
 
 extra:
