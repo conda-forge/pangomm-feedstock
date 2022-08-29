@@ -12,13 +12,13 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
   run_exports:
     - pangomm-{{ abi_version }} >={{ version }}
 
 outputs:
   - name: pangomm-{{ abi_version }}
-    script: build_pangomm.sh
+    script: build_pangomm.sh   # [unix]
+    script: build_pangomm.bat  # [win]
     build:
       run_exports:
         - pangomm-{{ abi_version }} >={{ version }}
@@ -39,8 +39,10 @@ outputs:
     test:
       requires:
         - pkg-config
+        - glib
       commands:
-        - test -f ${PREFIX}/lib/libpangomm-{{ abi_version }}${SHLIB_EXT}
+        - test -f ${PREFIX}/lib/libpangomm-{{ abi_version }}${SHLIB_EXT}  # [unix]
+        - if not exist %LIBRARY_BIN%\\pangomm-vc142-{{ abi_version }}-1.dll exit 1  # [win]
         - pkg-config --cflags --libs pangomm-{{ abi_version }}
         - pkg-config --exact-version {{ version }} pangomm-{{ abi_version }}
 
