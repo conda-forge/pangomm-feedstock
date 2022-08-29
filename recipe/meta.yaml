@@ -32,7 +32,6 @@ outputs:
         - cairomm-1.0 >=1.2.2
         - pango >=1.41.0
         - glibmm-2.4 >=2.48.0
-        - sigcpp-2.0
         - glib
       run_constrained:
         - pangomm {{ version }}
