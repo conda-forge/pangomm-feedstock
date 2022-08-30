@@ -70,7 +70,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pangomm-green.svg)](https://anaconda.org/conda-forge/pangomm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pangomm.svg)](https://anaconda.org/conda-forge/pangomm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pangomm.svg)](https://anaconda.org/conda-forge/pangomm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pangomm.svg)](https://anaconda.org/conda-forge/pangomm) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pangomm--1.4-green.svg)](https://anaconda.org/conda-forge/pangomm-1.4) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pangomm-1.4.svg)](https://anaconda.org/conda-forge/pangomm-1.4) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pangomm-1.4.svg)](https://anaconda.org/conda-forge/pangomm-1.4) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pangomm-1.4.svg)](https://anaconda.org/conda-forge/pangomm-1.4) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pangomm--2.48-green.svg)](https://anaconda.org/conda-forge/pangomm-2.48) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pangomm-2.48.svg)](https://anaconda.org/conda-forge/pangomm-2.48) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pangomm-2.48.svg)](https://anaconda.org/conda-forge/pangomm-2.48) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pangomm-2.48.svg)](https://anaconda.org/conda-forge/pangomm-2.48) |
 
 Installing pangomm
 ==================
@@ -82,16 +82,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pangomm, pangomm-1.4` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pangomm, pangomm-2.48` can be installed with `conda`:
 
 ```
-conda install pangomm pangomm-1.4
+conda install pangomm pangomm-2.48
 ```
 
 or with `mamba`:
 
 ```
-mamba install pangomm pangomm-1.4
+mamba install pangomm pangomm-2.48
 ```
 
 It is possible to list all of the versions of `pangomm` available on your platform with `conda`:
