@@ -1,4 +1,4 @@
-{% set version = "2.46.2" %}
+{% set version = "2.46.3" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 {% set abi_version = "1.4" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.gnome.org/sources/pangomm/{{ major_minor }}/pangomm-{{ version }}.tar.xz
-  sha256: 57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4
+  sha256: 410fe04d471a608f3f0273d3a17d840241d911ed0ff2c758a9859c66c6f24379
 
 build:
   number: 0
